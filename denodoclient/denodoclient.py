@@ -6,6 +6,7 @@ from os import getenv
 from denodoclient.vqlquery import VqlQuery
 
 
+# TODO: How to test this?
 class DenodoClient:
     OPTIONS = {
         "DRIVER": "{DenodoODBC Unicode(x64)}",
