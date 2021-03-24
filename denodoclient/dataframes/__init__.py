@@ -1,0 +1,3 @@
+from denodoclient.dataframes.denododataframeclient import DenodoDataFrameClient
+
+DenodoDataFrameClient = DenodoDataFrameClient

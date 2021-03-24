@@ -16,6 +16,8 @@ setup_requirements = [
     "pytest-runner",
 ]
 
+extras_requirements = {"pandas": "pandas>1, <2"}
+
 test_requirements = [
     "pytest>=3",
 ]
@@ -44,9 +46,10 @@ setup(
     name="denodoclient",
     packages=find_packages(include=["denodoclient", "denodoclient.*"]),
     setup_requires=setup_requirements,
+    extras_require=extras_requirements,
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/dingobar/denodoclient",
+    url="https://github.com/dfds-data/denodoclient",
     version="0.1.0",
     zip_safe=False,
 )

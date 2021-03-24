@@ -8,7 +8,7 @@ from denodoclient.vqlquery import VqlQuery
 
 class DenodoClient:
     OPTIONS = {
-        "DRIVER": "DenodoODBCDriver",
+        "DRIVER": "{DenodoODBC Unicode(x64)}",
         "UID": None,
         "PWD": None,
         "SERVER": "denodo",
@@ -17,7 +17,7 @@ class DenodoClient:
         "SSLmode": "prefer",
         "service": "",
         "krbsrvname": "HTTP",
-        "UserAgent": "<user agent>",
+        "UserAgent": f"{gethostname()}-{version}",
         "ReadOnly": "0",
         "Protocol": "7.4-1",
         "FakeOidIndex": "0",
