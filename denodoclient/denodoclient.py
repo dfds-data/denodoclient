@@ -88,3 +88,7 @@ class DenodoClient:
     @property
     def cursor(self):
         return self._cursor
+
+    @property
+    def columns(self):
+        return [description[0] for description in self._cursor.description]

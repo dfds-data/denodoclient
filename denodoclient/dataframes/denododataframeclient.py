@@ -14,10 +14,10 @@ class DenodoDataFrameClient(DenodoClient):
             return self._chunkwise_rows_to_dataframe(chunksize)
 
     def _all_rows_to_dataframe(self) -> pd.DataFrame:
-        return pd.DataFrame((tuple(t) for t in self._cursor.fetchall()))
+        return pd.DataFrame((tuple(t) for t in self._cursor.fetchall()), columns=self.columns)
 
     def _chunkwise_rows_to_dataframe(self, chunksize) -> Iterable[pd.DataFrame]:
         rows = self._cursor.fetchmany(chunksize)
         while rows:
-            yield pd.DataFrame(tuple(t) for t in rows)
+            yield pd.DataFrame((tuple(t) for t in rows), columns=self.columns)
             rows = self._cursor.fetchmany(chunksize)
