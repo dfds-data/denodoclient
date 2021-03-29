@@ -16,6 +16,8 @@ setup_requirements = [
     "pytest-runner",
 ]
 
+extras_requirements = {"pandas": "pandas>1, <2"}
+
 test_requirements = [
     "pytest>=3",
 ]
@@ -23,17 +25,14 @@ test_requirements = [
 setup(
     author="Martin Morset",
     author_email="mamor@dfds.com",
-    python_requires=">=3.5",
+    python_requires=">=3.8",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
     ],
     description="Thin high level client to use when consuming data through the Denodo proprietory ODBC driver.",
     install_requires=requirements,
@@ -44,9 +43,10 @@ setup(
     name="denodoclient",
     packages=find_packages(include=["denodoclient", "denodoclient.*"]),
     setup_requires=setup_requirements,
+    extras_require=extras_requirements,
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/dingobar/denodoclient",
-    version="0.1.0",
+    url="https://github.com/dfds-data/denodoclient",
+    version="0.2.0",
     zip_safe=False,
 )

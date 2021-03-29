@@ -26,12 +26,11 @@ Thin high level client to use when consuming data through the Denodo proprietory
 Features
 --------
 
-* TODO
+* ODBC cursor low-level access to Denodo with sensible default connection string
+* High-level client using Pandas to fetch results to a dataframe, all in one go or chunkwise
+* Simple query templating functionality
 
 Credits
 -------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+This package was created by DFDS
