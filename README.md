@@ -63,10 +63,10 @@ from pathlib import Path
 client = DenodoClient("database_name", DRIVER="my_denodo_driver", SERVER="denodo-uat")
 ```
 
-For a list of options, have a look at `client.OPTIONS`.
+For a list of options, have a look at `DenodoClient.OPTIONS`.
 
 ```python
-print(client.OPTIONS)
+print(DenodoClient.OPTIONS)
 ```
 
 ## Dynamically change query parameters
