@@ -56,7 +56,9 @@ class DenodoClient:
     }
 
     def __init__(self, database: str, **options) -> None:
-        if (not isinstance(database, str)) or len(database) < 1:
+        if (isinstance(database, str)) and len(database) > 1:
+            self.OPTIONS.update({"DATABASE": database})
+        else:
             raise ValueError(f"Invalid database name {database}")
 
         if (uid := getenv("DENODO_UID")) is not None:
