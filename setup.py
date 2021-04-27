@@ -44,6 +44,6 @@ setup(
     test_suite="tests",
     tests_require=test_requirements,
     url="https://github.com/dfds-data/denodoclient",
-    version="1.0.0",
+    version="version="1.0.0"",
     zip_safe=False,
 )

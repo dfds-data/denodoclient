@@ -9,4 +9,4 @@ DenodoClient = DenodoClient
 
 __author__ = """Martin Morset"""
 __email__ = "mamor@dfds.com"
-__version__ = "1.0.0"
+__version__ = "__version__ = "1.0.0""
