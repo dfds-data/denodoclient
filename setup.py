@@ -4,9 +4,6 @@
 
 from setuptools import setup, find_packages
 
-with open("README.md") as readme_file:
-    readme = readme_file.read()
-
 requirements = ["pyodbc>4, <5"]
 
 setup_requirements = [
@@ -34,7 +31,7 @@ setup(
     description="Thin high level client to use when consuming data through the Denodo proprietory ODBC driver.",
     install_requires=requirements,
     license="MIT license",
-    long_description=readme,
+    long_description="See https://github.com/dfds-data/denodoclient/",
     include_package_data=True,
     keywords="denodoclient",
     name="denodoclient",
@@ -44,6 +41,6 @@ setup(
     test_suite="tests",
     tests_require=test_requirements,
     url="https://github.com/dfds-data/denodoclient",
-    version="1.0.0",
+    version="1.0.1",
     zip_safe=False,
 )
