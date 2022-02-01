@@ -1,3 +1,7 @@
+# IMPORTANT
+
+This project is no longer actively maintained. Feel free to adapt the code to your own use-case.
+
 # Denodo Client
 
 [![PyPI license](https://img.shields.io/pypi/l/denodoclient.svg)](https://pypi.python.org/pypi/denodoclient/)
